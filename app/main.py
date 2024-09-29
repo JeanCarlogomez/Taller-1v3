@@ -1,7 +1,7 @@
-from producto import Producto
-from categoria import Categoria
-from proveedor import Proveedor
-from bodega import Bodega
+from .producto import Producto
+from .categoria import Categoria
+from .proveedor import Proveedor
+from .bodega import Bodega
 
 def main():
     categoria = Categoria("Electrónica", "Dispositivos electrónicos")

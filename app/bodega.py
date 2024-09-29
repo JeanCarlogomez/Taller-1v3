@@ -1,4 +1,4 @@
-from producto import Producto
+from .producto import Producto
 
 class Bodega:
     def __init__(self, nombre: str, ubicacion: str, capacidad_maxima: int):
