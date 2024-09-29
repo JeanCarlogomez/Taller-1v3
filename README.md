@@ -21,6 +21,6 @@ Este proyecto implementa un sistema de gestión de inventarios que permite regis
 3. **Instalar las dependencias listadas en requirements.txt:**: 
     pip install -r requirements.txt
 
-Requerimientos del Sistema
-Python 3.x
-Librerías: Rich (y otras que estén listadas en requirements.txt).
+**Requerimientos del Sistema**
+    Python 3.x
+    Librerías: Rich (y otras que estén listadas en requirements.txt).
