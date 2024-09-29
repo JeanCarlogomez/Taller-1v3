@@ -5,7 +5,7 @@ class Bodega:
         self.nombre = nombre
         self.ubicacion = ubicacion
         self.capacidad_maxima = capacidad_maxima
-        self.productos_almacenados = {}  # Diccionario {Producto: Cantidad}
+        self.productos_almacenados = {}
     
     def agregar_producto(self, producto, cantidad: int):
         if self.obtener_total_stock() + cantidad > self.capacidad_maxima:
@@ -19,6 +19,7 @@ class Bodega:
         if producto in self.productos_almacenados:
             if self.productos_almacenados[producto] >= cantidad:
                 self.productos_almacenados[producto] -= cantidad
+                producto.retirar_stock(cantidad)
                 if self.productos_almacenados[producto] == 0:
                     del self.productos_almacenados[producto]
             else:
